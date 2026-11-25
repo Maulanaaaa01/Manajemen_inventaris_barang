@@ -1,4 +1,4 @@
-data_barang = []
+import CRUD as CRUD
 
 while(True):
     print("=" * 40)
@@ -20,7 +20,7 @@ while(True):
     option = input("Pilih menu (1-10): ")
 
     match option:
-        case "1": print("Tambah barang")
+        case "1": CRUD.tambah_barang()
         case "2": print("Lihat barang")
         case "3": print("Cari barang")
         case "4": print("Ubah barang")
